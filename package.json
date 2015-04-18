@@ -1,0 +1,28 @@
+{
+  "name": "node-http-proxy-docker",
+  "version": "0.0.1",
+  "description": "Automates an http-proxy for docker containers",
+  "author": "Joshua Chavez josh@findjosh.com",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "main": "main.js",
+  "repository": {
+  "type": "git",
+  "url": ""
+},
+  "bugs": {
+  "url": ""
+},
+  "keywords": [
+],
+  "dependencies": {
+    "http-proxy": "1.10.1",
+    "dockerode":"2.1.1",
+    "docker-events":"0.0.2"
+  },
+  "preferGlobal": false,
+  "private": true,
+  "analyze": true,
+  "license": "MIT"
+}
