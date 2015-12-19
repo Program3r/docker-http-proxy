@@ -11,6 +11,9 @@ var getOptionsFromInspect = function(data){
         "Env":{},
         "IP":data.NetworkSettings.IPAddress
     };
+    if(options.IP === ''){
+        options.IP = data.Name.substring(1);
+    }
     for(e in env){
         var n = env[e].split('=');
         options.Env[n[0]] = n[1];
